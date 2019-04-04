@@ -283,6 +283,14 @@ def gameKeyPressed(event, data):
                         data.selectedUnit.moved = True
                         data.selectedUnit = None
                         return
+                        
+            #case where all attacks have finished and no unit died
+            data.choosingAtk = False
+            data.atkOption = 0
+            data.atkTargets = []
+            data.selectedUnit.moved = True
+            data.selectedUnit = None
+            return         
     
     elif data.commandMenuOpen:
         #up and down arrow keys scroll through the menu
