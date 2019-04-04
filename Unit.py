@@ -137,9 +137,9 @@ class Unit(object):
 class enemySoldier(Unit):
     def __init__(self, name, pos):
         self.name = name
-        self.hp = 23
-        self.totalhp = 23
-        self.str = 6
+        self.hp = 2300 #inflated for testing purposes
+        self.totalhp = 2300 #inflated for testing purposes
+        self.str = 1 #decreased for testing purposes
         self.skill = 4
         self.spd = 7
         self.luck = 0
@@ -291,7 +291,8 @@ def isInGrid(data, x, y):
 Eirika = Unit('Eirika', 18, 5, 10, 10, 11, 4, 2, 5, 5, True, False, (0,0))
 Eirika.weapons = [ironSword, slimSword, steelSword, shamshir, killingEdge]
 
-Ephraim = Unit('Ephraim', 23, 8, 9, 11, 8, 7, 2, 8, 5, True, False, (10,11))
+Ephraim = Unit('Ephraim', 2300, 8, 9, 11, 8, 7, 2, 8, 5, True, False, (10,11))
+#hp inflated for testing
 Ephraim.weapons = [ironLance, slimLance, steelLance, killerLance, javelin]
 
 grunt1 = enemySoldier('Grunt 1', (15,15))
