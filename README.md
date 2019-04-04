@@ -1,6 +1,8 @@
 # Fire-Emblem-2
 inspired by FE Sacred Stones
 
+Use Pyzo; Use Shell 2 (Python 3.5); Run "Main.py" as  (Ctrl+Shift+E)
+
 CONTROLS:
 arrows keys move the cursor
 's' button is equivalent to 'a' button on gameboy --> pressing 's' typically selects something
