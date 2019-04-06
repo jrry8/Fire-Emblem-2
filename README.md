@@ -1,4 +1,5 @@
 # Fire-Emblem-2
+
 inspired by FE Sacred Stones
 
 Use Pyzo; Use Shell 2 (Python 3.5); Run "Main.py" as  (Ctrl+Shift+E)
@@ -21,10 +22,18 @@ See how well your unit matches up to your foe using the combat information windo
 To display the map menu, place the cursor on unoccupied spaces or on units that have completed their actions for that turn
 and press 's'. 
 
+### QOL THINGS TO DO ###
+change class construction -> all the init variables make looking at the code for a specific unit incomprehendable
+                             need smth like Unit('Ephraim', hp=100, str=9, ...)
+clean up code with a lot more helper functions
+### ---------------- ###
+
 ### THINGS UNIMPLEMENTED OR IMPLEMENTED INCORRECTLY ###
 - ranged attacks
 - holding down arrow keys to move cursor fast (currently need to press 'a' and hold down arrow key)
 - not displaying combat information window
+- Map Editor (See TP3)
+- Random Map Generator (See TP3) 
 ### ----------------------------------------------- ###
 
 UNIT PROPERTIES:
