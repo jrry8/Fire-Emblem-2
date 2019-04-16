@@ -1,0 +1,55 @@
+def runGame(data):
+	endOfTurnEffects()
+	changeTurn()
+	keyPresses()
+	
+create variables:
+	buttonA = pygame.K_s
+	buttonB = pygame.K_a
+	buttonL = 
+	buttonR = 
+	buttonSelect =
+	buttonStart =
+def gameKeyPressed(event, data):
+	jumpToUnit() [L button when on battle map]
+	openUnitStatus() [R button when on battle map and cursor is over a unit]
+	openMiniBattleMap() [START button when on battle map]
+	openMapMenu() [a button when cursor is not on unit (or cursor is on a unit that has moved)]
+	selectUnit() [a button when cursor is on unit]
+	commandOptions() [a button to move unit; after selectUnit()]
+	weaponSelection() [if unit chooses to attack]
+	confirmAttack() [after unit has chosen weapon, now choosing which unit to attack while combat information window is displayed]
+	
+def drawGame():
+	draw map tiles
+	draw units
+	draw cursor
+while on battle map:
+	clockwise order: cursor, objective, terrain, unit info
+	drawObjOverlay() 
+	drawTerrainOverlay()
+	drawUnitOverlay() [only if cursor is over a unit]
+after pressing START:
+	drawMiniBattleMap()
+while selecting unit movement (after selecting unit):
+	drawMoveRange() [draw move/attack range of a unit once it has been selected]
+	drawMovePath() [draw arrow showing unit's movement path to cursor]
+	
+	while selecting unit's command (after unit has moved):
+		drawAttackRange() [draw attack range of unit after it has moved (if enemy is in range)]
+		drawCommandMenu() [after unit has moved to a location]
+			can include: attack, heal, item, trade, wait
+
+		while attack command has been chosen:
+			drawWeaponSelection() 
+			drawWeaponInfo() 
+			drawAttackRange() [stays drawn]
+			
+			while weapon has been chosen:
+				drawCombatInfo()
+				drawAttackRange() [stays drawn]
+	
+	
+
+	
+	
