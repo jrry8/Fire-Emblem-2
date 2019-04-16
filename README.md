@@ -18,6 +18,10 @@ If there are no enemies within range, then select 'Wait' and press 's' to confir
 Select weapon you want to use. 
 If there are multiple enemies within your attack range, you will have to select which enemy you want to attack. 
 See how well your unit matches up to your foe using the combat information window, then confirm your decision to attack. 
+Leveling up / exp gain
+Auto turn end (option to turn off or on)
+Auto cursor
+Enemy AI
 ### ---------------- ###
 To display the map menu, place the cursor on unoccupied spaces or on units that have completed their actions for that turn
 and press 's'. 
@@ -29,9 +33,11 @@ clean up code with a lot more helper functions
 ### ---------------- ###
 
 ### THINGS UNIMPLEMENTED OR IMPLEMENTED INCORRECTLY ###
+- pressing A on an enemy unit should show its move/attack range; pressing A again should exit
 - ranged attacks
 - holding down arrow keys to move cursor fast (currently need to press 'a' and hold down arrow key)
 - not displaying combat information window
+- improve visuals/add animations
 - Map Editor (See TP3)
 - Random Map Generator (See TP3) 
 ### ----------------------------------------------- ###
